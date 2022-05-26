@@ -9,6 +9,11 @@ body {
     width: 100vw;
 
     background-color: chocolate;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
 }
 
 #pantalla2 {
@@ -46,3 +51,11 @@ body {
 
     display: none;
 }
+
+
+.logo {
+
+    height: 15em;
+
+    width: 27em;
+} 

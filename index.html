@@ -10,12 +10,13 @@
 </head>
 <body>
 
-    <div id="pantalla1" onclick="screenSwitch('pantalla1','pantalla2')"></div>
-    <div id="pantalla2" onclick="screenSwitch('pantalla2','pantalla3')"></div>
-    <div id="pantalla3" onclick="screenSwitch('pantalla3','pantalla4')"></div>
-    <div id="pantalla4" onclick="screenSwitch('pantalla4','pantalla5')"></div>
-    <div id="pantalla5" onclick="screenSwitch('pantalla5','pantalla1')"></div>
+    <div id="pantalla1"><img class="logo" src="img/logo.png" alt="logoRacing" onclick="screenSwitch('pantalla2')"></div>
+    <div id="pantalla2" onclick="screenSwitch('pantalla3')"></div>
+    <div id="pantalla3" onclick="screenSwitch('pantalla4')"></div>
+    <div id="pantalla4" onclick="screenSwitch('pantalla5')"></div>
+    <div id="pantalla5" onclick="screenSwitch('pantalla1')"></div>
 
+    <script src="js/coche.js"></script>
     <script src="js/main.js"></script>
 </body>
 </html>
