@@ -19,3 +19,30 @@ body {
 
     display: none;
 }
+
+#pantalla3 {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: blue;
+
+    display: none;
+}
+
+#pantalla4 {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: yellow;
+
+    display: none;
+}
+
+#pantalla5 {
+    height: 100vh;
+    width: 100vw;
+
+    background-color: orange;
+
+    display: none;
+}
