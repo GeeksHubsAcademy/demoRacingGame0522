@@ -11,8 +11,18 @@
 <body>
 
     <div id="pantalla1"><img class="logo" src="img/logo.png" alt="logoRacing" onclick="screenSwitch('pantalla2')"></div>
-    <div id="pantalla2" onclick="screenSwitch('pantalla3')"></div>
-    <div id="pantalla3" onclick="screenSwitch('pantalla4')"></div>
+
+    <div id="pantalla2">
+        <div class="padre">
+            <div class="coche" onclick="selecciona('1')"><img class="foto" src="img/golf.jpg" alt="adsf"></div>
+            <div class="coche" onclick="selecciona('2')"><img class="foto" src="img/mitsu.jpg" alt="asfasdf"></div>
+            <div class="coche" onclick="selecciona('3')"><img class="foto" src="img/seat.jpg" alt="fffff"></div>
+            <div class="coche" onclick="selecciona('4')"><img class="foto" src="img/tesla.jpg" alt="pppppopop"></div>
+        </div>
+    </div>
+    <div id="pantalla3" onclick="screenSwitch('pantalla4')">
+        <div id="padreTres"></div>
+    </div>
     <div id="pantalla4" onclick="screenSwitch('pantalla5')"></div>
     <div id="pantalla5" onclick="screenSwitch('pantalla1')"></div>
 

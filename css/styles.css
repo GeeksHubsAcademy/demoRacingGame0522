@@ -23,6 +23,8 @@ body {
     background-color: crimson;
 
     display: none;
+    justify-content: center;
+    align-items: center;
 }
 
 #pantalla3 {
@@ -32,6 +34,11 @@ body {
     background-color: blue;
 
     display: none;
+    align-items: center;
+    flex-direction: row !important;
+    justify-content: center;
+   
+
 }
 
 #pantalla4 {
@@ -59,3 +66,40 @@ body {
 
     width: 27em;
 } 
+
+.padre {
+
+    display: flex;
+
+    width: 50em;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    
+}
+
+.foto {
+    height: 8em;
+
+    padding: 2em;
+}
+
+.fotoVersus {
+
+    height: 10em;
+
+}
+
+.hijoVersus {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+}
+
+.padreTres  {
+    display: flex;
+    flex-direction: row !important;
+    justify-content: center;
+    align-items: center;
+}
