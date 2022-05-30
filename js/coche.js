@@ -15,8 +15,13 @@ class Coche {
 
     acelerar(){
 
-        this.metros = (this.velocidad * this.peso) + 20;
+        this.metros = Math.floor(this.metros + (this.velocidad / this.peso) + 20);
 
+    };
+
+    chocar(enemigo){
+
+        enemigo.metros = enemigo.metros - (this.velocidad / this.peso);
     };
 
 };

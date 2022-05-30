@@ -23,8 +23,26 @@
     <div id="pantalla3" onclick="screenSwitch('pantalla4')">
         <div id="padreTres"></div>
     </div>
-    <div id="pantalla4" onclick="screenSwitch('pantalla5')"></div>
-    <div id="pantalla5" onclick="screenSwitch('pantalla1')"></div>
+    <div id="pantalla4">
+        <div id="padreCuatro">
+            <div class="hijoScreen4 screen4Car">
+                <div id="cocheIzquierda">
+
+                </div>
+            </div>
+            <div class="hijoScreen4 screen4Central">
+                <img class="imagenVolante" onclick="play()" src="img/steering.png" alt="volante"/>
+            </div>
+            <div class="hijoScreen4 screen4Car">
+                <div id="cocheDerecha">
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="pantalla5" onclick="limpiar()">
+        <div id="winnerIs"></div>
+    </div>
 
     <script src="js/coche.js"></script>
     <script src="js/main.js"></script>

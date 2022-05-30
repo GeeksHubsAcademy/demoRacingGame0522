@@ -1,6 +1,14 @@
+
 let jugadores = [];
 
+let ganador = "";
+
 let vistaVersus = document.getElementById("padreTres");
+let cocheIzquierda = document.getElementById("cocheIzquierda");
+let cocheDerecha = document.getElementById("cocheDerecha");
+let metrosIzquierda;
+let metrosDerecha;
+let winnerIs = document.getElementById("winnerIs");
 
 const screenSwitch = (pantallaDestino) => {
 
@@ -49,7 +57,16 @@ const selecciona = (car) => {
                 screenSwitch("pantalla3");
 
                 setTimeout(()=>{
+
+                    cocheIzquierda.innerHTML = `<div><img class='cocheRun' src='img/${jugadores[0].modelo}.jpg'/></div><div>${jugadores[0].marca}</div><div id='metrosIzquierda'>${jugadores[0].metros}</div>`;
+                    cocheDerecha.innerHTML = `<div><img class='cocheRun' src='img/${jugadores[1].modelo}.jpg'/></div><div>${jugadores[1].marca}</div><div id='metrosDerecha'>${jugadores[1].metros}</div>`;
+
+                    metrosIzquierda = document.getElementById("metrosIzquierda");
+                    metrosDerecha = document.getElementById("metrosDerecha");
+
                     screenSwitch("pantalla4");
+
+                    
                 },2000);
             },500);
         }
@@ -61,3 +78,47 @@ const selecciona = (car) => {
 
 };
 
+const play = () => {
+    
+    let random = Math.round(Math.random());
+
+    jugadores[random].acelerar();
+
+    if(jugadores[random].metros >= 1000){
+
+
+
+        setTimeout(()=>{
+
+            winnerIs.innerHTML = `${jugadores[random].marca}`;
+
+            screenSwitch("pantalla5");
+        },500)
+    }
+
+    if(random == 0){
+
+        metrosIzquierda.innerHTML = `${jugadores[random].metros}`;
+    } else {
+        metrosDerecha.innerHTML = `${jugadores[random].metros}`;
+    }
+
+
+};
+
+const limpiar = () => {
+
+    jugadores = [];
+
+    ganador = "";
+
+    metrosIzquierda.innerHTML = ``;
+
+    metrosDerecha.innerHTML = ``;
+
+    setTimeout(()=>{
+
+        screenSwitch("pantalla1");
+    },500);
+
+};
