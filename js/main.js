@@ -84,7 +84,7 @@ const play = () => {
 
     jugadores[random].acelerar();
 
-    if(jugadores[random].metros >= 1000){
+    if(jugadores[random].metros >= 200){
 
 
 
@@ -115,6 +115,11 @@ const limpiar = () => {
     metrosIzquierda.innerHTML = ``;
 
     metrosDerecha.innerHTML = ``;
+
+    coche1.metros = 0;
+    coche2.metros = 0;
+    coche3.metros = 0;
+    coche4.metros = 0;
 
     setTimeout(()=>{
 
